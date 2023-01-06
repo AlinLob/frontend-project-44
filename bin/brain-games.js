@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
-import greetings from "../src/cli.js";
+/* eslint-disable import/no-unresolved */
+// eslint-disable-next-line import/extensions
+import greetings from '../src/cli.js';
 
 greetings();
