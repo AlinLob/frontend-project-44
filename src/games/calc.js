@@ -27,8 +27,8 @@ const playCalculator = (value1, value2, operator) => {
 };
 
 const roundGame = () => {
-  const value1 = getRandom(50);
-  const value2 = getRandom(50);
+  const value1 = getRandom(0, 50);
+  const value2 = getRandom(0, 50);
   const operator = getRandomOperator();
   const question = `${value1} ${operator} ${value2}`;
   const correctAnswer = playCalculator(value1, value2, operator);
