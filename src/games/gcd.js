@@ -12,8 +12,8 @@ const calculation = (number1, number2) => {
 };
 
 const roundGame = () => {
-  const number1 = Math.abs(getRandom(100));
-  const number2 = Math.abs(getRandom(100));
+  const number1 = Math.abs(getRandom(1, 100));
+  const number2 = Math.abs(getRandom(1, 100));
   const question = `${number1} ${number2}`;
   const answer = calculation(number1, number2);
   return [question, answer];
