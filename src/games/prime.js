@@ -1,7 +1,4 @@
-import playGame from '../index.js';
-
-// eslint-disable-next-line import/no-duplicates
-import { getRandom } from '../index.js';
+import playGame, { getRandom } from '../index.js';
 
 const taskGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
