@@ -1,4 +1,6 @@
-import playGame, { getRandom } from '../index.js';
+import playGame from '../index.js';
+
+import getRandomNum from '../getRandom.js';
 
 const taskGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -15,7 +17,7 @@ const getPrime = (number) => {
 };
 
 const roundGame = () => {
-  const number = Math.abs(getRandom(1, 100));
+  const number = Math.abs(getRandomNum(1, 100));
   const question = number;
   const correctAnswer = getPrime(number) ? 'yes' : 'no';
   return [question, correctAnswer];
