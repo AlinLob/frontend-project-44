@@ -4,7 +4,7 @@
 import playGame from '../index.js';
 
 // eslint-disable-next-line import/no-duplicates
-import { getRandom } from '../index.js';
+import getRandomNum from '../getRandom.js';
 
 const taskGame = 'What is the result of the expression?';
 
@@ -15,7 +15,7 @@ const getRandomOperator = () => {
   return selectedOperator;
 };
 
-const playCalculator = (value1, value2, operator) => {
+const getCalculator = (value1, value2, operator) => {
   switch (operator) {
     case '+':
       return value1 + value2;
@@ -27,11 +27,11 @@ const playCalculator = (value1, value2, operator) => {
 };
 
 const roundGame = () => {
-  const value1 = getRandom(0, 50);
-  const value2 = getRandom(0, 50);
+  const value1 = getRandomNum(0, 50);
+  const value2 = getRandomNum(0, 50);
   const operator = getRandomOperator();
   const question = `${value1} ${operator} ${value2}`;
-  const correctAnswer = playCalculator(value1, value2, operator);
+  const correctAnswer = getCalculator(value1, value2, operator);
   return [question, correctAnswer];
 };
 
