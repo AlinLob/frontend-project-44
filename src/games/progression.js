@@ -1,4 +1,6 @@
-import playGame, { getRandom } from '../index.js';
+import playGame from '../index.js';
+
+import getRandomNum from '../getRandom.js';
 
 const taskGame = 'What number is missing in the progression?';
 
@@ -12,10 +14,10 @@ const getProgression = (number1, length, step) => {
 };
 
 const roundGame = () => {
-  const length = getRandom(5, 10);
-  const unkownMemberIndex = getRandom(0, length);
-  const step = getRandom(1, 5);
-  const number1 = getRandom(1, 10);
+  const length = getRandomNum(5, 10);
+  const unkownMemberIndex = getRandomNum(0, length);
+  const step = getRandomNum(1, 5);
+  const number1 = getRandomNum(1, 10);
   const arithmProgressArr = getProgression(number1, length, step);
   const correctAnswer = arithmProgressArr[unkownMemberIndex];
   arithmProgressArr[unkownMemberIndex] = '..';
