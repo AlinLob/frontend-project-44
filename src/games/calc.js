@@ -1,4 +1,4 @@
-/*eslint no-trailing-spaces: "error"*/
+-/* eslint-disable consistent-return */
 /* eslint-disable default-case */
 // eslint-disable-next-line import/no-duplicates
 import playGame from '../index.js'; 
