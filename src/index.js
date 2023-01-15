@@ -1,3 +1,4 @@
+/* eslint-disable import/no-duplicates */
 import readlineSync from 'readline-sync';
 
 const playGame = (taskGame, roundGame) => {
