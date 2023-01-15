@@ -1,8 +1,8 @@
--/* eslint-disable consistent-return */
+/* eslint-disable consistent-return */
 /* eslint-disable default-case */
 // eslint-disable-next-line import/no-duplicates
-import playGame from '../index.js'; 
-
+import playGame from '../index.js';
+// eslint-disable-next-line import/no-duplicates
 import getRandomNum from '../getRandom.js';
 
 const taskGame = 'What is the result of the expression?';
