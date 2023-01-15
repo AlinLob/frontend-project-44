@@ -1,3 +1,4 @@
+/* eslint-disable import/no-duplicates */
 import playGame from '../index.js';
 
 import getRandomNum from '../getRandom.js';
