@@ -1,4 +1,5 @@
 /* eslint-disable import/no-duplicates */
+/*eslint no-trailing-spaces: "error"*/
 import playGame from '../index.js';
 
 import getRandomNum from '../getRandom.js';
