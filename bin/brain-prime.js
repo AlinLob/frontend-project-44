@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-// eslint-disable-next-line import/no-unresolved
 import playPrime from '../src/games/prime.js';
 
 playPrime();
