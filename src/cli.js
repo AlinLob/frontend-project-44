@@ -1,5 +1,3 @@
-/* eslint-disable import/extensions */
-
 import readlineSync from 'readline-sync';
 
 const greetings = () => {
